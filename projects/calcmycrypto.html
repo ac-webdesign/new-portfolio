@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcMyCrypto Application</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-content{
+            padding: 1rem;
+        }
+        li{
+            list-style-type: none;
+            margin-bottom: 0.4em;
+        }
+        .gallery-item{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gallery-item img{
+            width: 150px;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="/images/logo2.png" alt="Alexander Logo"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="project-overview">
+            <h1>Crypto Calculator App</h1>
+            <div class="project-content">
+                <div class="project-description">
+                     <p>CalcMyCrypto is an application for everyone, mostly for cryptocurrency users which offers real time convertion rates. You can simply insert the value of the crypto you want to convert and the app calculates the current value of your crypto in traditional currencies like dollars or euros. It solves the problem of the highly unstable cryptocurrency market rates with accurate and up to date conversion rates.</p>
+                <p>This app also includes a news page which displays the latest news about cryptocurrencies. It fetches news from the CoinGecko API and displays it in a news page.</p>    
+                    </div>  
+
+                <div class="project-image">
+                    <img src="/images/calcmycryptoimage.png" alt="Blogger Homepage">
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/ac-webdesign/calcMyCrypto-Application" class="btn btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+                <a href="https://calc-my-crypto-application.vercel.app/" class="btn btn-demo">Live Demo</a>
+            </div>
+            <p class="demo-note"><b>Note:</b> The server may take a few moments to start up when accessing the live demo. Please be patient if there's a slight delay.</p>
+        </section>
+
+        <section id="project-details">
+            <h2>Key Features</h2>
+            <div class="project-features">
+                <ul>
+                    <li>Real-time conversion rates</li>
+                    <li>User-friendly interface</li>
+                    <li>API integration</li>
+                    <li>News page</li>
+                    <li>Routing</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="technologies-used">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <ul>
+                    
+                    <li>React</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>CoinGecko API</li>
+                    <li>Deployed on Vercel: <a href="https://calc-my-crypto-application.vercel.app/">Live Demo</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="project-gallery">
+            <h2>Project Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="/images/calc-home.png" alt="Login Screen" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/calc-news.png" alt="Registration Page" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/calc-settings.png" alt="Notes Management" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/calculator.png" alt="Notes Management" class="gallery-image">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="project-reflection">
+            <h2>Reflection</h2>
+            <p>This project was a great opportunity to apply the skills I learned in the Full Stack Web Development course. I enjoyed building the application and learning about the different technologies involved. The project helped me understand the flow of data between the frontend and backend, and the importance of middleware in web applications. I also appreciate the use of EJS for templating, which made it easier to create reusable components and views.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ac-webdev. All rights reserved.</p>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

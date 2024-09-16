@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Application Project - Alexander Chorevas</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="/images/logo2.png" alt="Alexander Logo"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="project-overview">
+            <h1>Authentication Project</h1>
+            <div class="project-content">
+                <div class="project-description">
+                    <p>This project is a full-stack web application that allows users to securely register, log in, and manage their personal notes. Each user has an individual account, and upon logging in, they can add, view, and delete notes. The app ensures that each user can only access their own notes and provides a clean and simple interface for ease of use.</p>
+                </div>
+                <div class="project-image">
+                    <img src="/images/auth-project-full.png" alt="Auth Application Overview">
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/ac-webdesign/authentication-project" class="btn btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+                <a href="https://authentication-notes-project.onrender.com/" class="btn btn-demo">Live Demo</a>
+            </div>
+            <p class="demo-note"><b>Note:</b> The server may take a few moments to start up when accessing the live demo. Please be patient if there's a slight delay.</p>
+        </section>
+
+        <section id="project-details">
+            <h2>Key Features</h2>
+            <div class="project-features">
+                <ul>
+                    <li>User Authentication: Secure registration and login using encrypted passwords</li>
+                    <li>Note Management: Users can create, view, and delete personal notes</li>
+                    <li>Authorization: Protected routes ensure only authenticated users can access or modify notes</li>
+                    <li>Responsive Design: Simple and user-friendly interface built with EJS templates</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="technologies-used">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <ul>
+                    <li>Node.js & Express.js (Backend)</li>
+                    <li>MongoDB & Mongoose (Database)</li>
+                    <li>EJS (Frontend templating engine)</li>
+                    <li>Express sessions & bcrypt (Authentication)</li>
+                    <li>CSS for styling</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="project-gallery">
+            <h2>Project Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="/images/auth-login.png" alt="Login Screen" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/auth-signup.png" alt="Registration Page" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/auth-tasks.png" alt="Notes Management" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/auth-thumb.png" alt="Logout Functionality" class="gallery-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges-solutions">
+            <h2>Challenges and Solutions</h2>
+            <p>One of the main challenges was implementing secure user authentication and ensuring that only authorized users could access personal data. This was achieved by using bcrypt for password encryption and Express sessions for managing user sessions, ensuring that each user could only access their own notes.</p>
+        </section>
+
+        <section id="future-improvements">
+            <h2>Future Improvements</h2>
+            <ul>
+                <li>Integrate user authentication with OAuth for social media logins</li>
+                <li>Enhance the note-taking functionality with rich-text editing</li>
+                <li>Improve the UI for better mobile responsiveness</li>
+                <li>Add automated backup and restore features for user data</li>
+            </ul>
+        </section>
+
+        <section id="project-reflection">
+            <h2>Reflection</h2>
+            <p>This project helped me deepen my understanding of authentication and user management in web applications. I learned how to use session-based authentication to secure routes and protect sensitive data. Implementing modular code for scalability was another key takeaway, as it allowed for future improvements without disrupting the core functionality.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ac-webdev. All rights reserved.</p>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

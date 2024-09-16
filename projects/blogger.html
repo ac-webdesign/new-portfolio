@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger Project</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="/images/logo2.png" alt="Alexander Logo"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="project-overview">
+            <h1>Blogger Project</h1>
+            <div class="project-content">
+                <div class="project-description">
+                    <p>This project is a full-stack blog application developed as part of my Full Stack Web Development education. The application is built using Node.js and Express on the backend, with MongoDB as the database for storing blog posts. For the frontend, EJS (Embedded JavaScript) templating engine is used to dynamically render content. The project demonstrates the implementation of CRUD (Create, Read, Update, Delete) operations, routing, and the use of middleware in a web application.</p>
+                </div>
+                <div class="project-image">
+                    <img src="/images/blogger-home.png" alt="Blogger Homepage">
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/ac-webdesign/blog-project" class="btn btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+                <a href="https://blog-project-hlyu.onrender.com/blogs" class="btn btn-demo">Live Demo</a>
+            </div>
+            <p class="demo-note"><b>Note:</b> The server may take a few moments to start up when accessing the live demo. Please be patient if there's a slight delay.</p>
+        </section>
+
+        <section id="project-details">
+            <h2>Key Features</h2>
+            <div class="project-features">
+                <ul>
+                    <li><b>Dynamic Routing:</b> Express.js routes are used to handle various HTTP requests. For example, the /blogs route displays all blog posts, while the /about route displays information about the blog.</li>
+                    <li><b>CRUD Operations:</b> Users can create new blog posts, view a list of all posts, and delete existing posts. The application demonstrates fundamental CRUD operations, with data persistence managed through MongoDB.</li>
+                    <li><b>EJS Templating:</b> The application uses EJS as the templating engine, allowing for dynamic content rendering on the server-side. This helps in creating reusable components and rendering views such as the home page, individual blog posts, and the "About" page.</li>
+                    <li><b>Middleware Integration:</b> The application uses middleware such as morgan for logging HTTP requests, express.static for serving static files like CSS from the public directory.
+                    </li>
+                    <li><b>MongoDB Integration:</b> MongoDB Atlas is used as the database service to store blog post data.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="technologies-used">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <ul>
+                    <li>Node.js & Express.js (Backend)</li>
+                    <li>MongoDB & Mongoose (Database)</li>
+                    <li>EJS (Frontend templating engine)</li>
+                    <li>Middleware: Morgan, Express.static, Express.urlencoded</li>
+                    <li>CSS for styling</li>
+                    <li>Deployed on Render: <a href="https://blog-project-hlyu.onrender.com/blogs">Live Demo</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="project-gallery">
+            <h2>Project Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="/images/blogger-blog.png" alt="Login Screen" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/blogger-create.png" alt="Registration Page" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/blogger-details.png" alt="Notes Management" class="gallery-image">
+                </div>
+                
+            </div>
+        </section>
+
+
+        <section id="project-reflection">
+            <h2>Reflection</h2>
+            <p>This project was a great opportunity to apply the skills I learned in the Full Stack Web Development course. I enjoyed building the application and learning about the different technologies involved. The project helped me understand the flow of data between the frontend and backend, and the importance of middleware in web applications. I also appreciate the use of EJS for templating, which made it easier to create reusable components and views.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ac-webdev. All rights reserved.</p>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application Project - Alexander Chorevas</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../projects.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="/images/logo2.png" alt="Alexander Logo"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="project-overview">
+            <h1>Real-Time Chat Application</h1>
+            <div class="project-content">
+                <div class="project-description">
+                    <p>This project is a real-time chat application that allows users to connect with others, send and receive messages instantly, and see the online status of other participants. It's built with React for the frontend and Node.js with Socket.io for real-time communication on the backend. Users can choose a username, send messages, and see system notifications when users join or leave the chat.</p>
+                </div>
+                <div class="project-image">
+                    <img src="/images/chat-project-full.png" alt="Chat Application Overview">
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/ac-webdesign/Real-time-chat" class="btn btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+                <a href="https://alex-chat.netlify.app/" class="btn btn-demo">Live Demo</a>
+            </div>
+            <p class="demo-note"><b>Note:</b> Due to the free tier hosting on Render, the server may take a few moments to start up when accessing the live demo. Please be patient if there's a slight delay.</p>
+        </section>
+
+        <section id="project-details">
+            <h2>Key Features</h2>
+            
+            <div class="project-features">
+               
+                <ul>
+                    <li>Real-time messaging with Socket.io</li>
+                    <li>Username selection for personalized chat experience</li>
+                    <li>Display of online users</li>
+                    <li>System notifications for user connections/disconnections</li>
+                    <li>Message timestamps</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="technologies-used">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <ul>
+                    <li>React (Frontend)</li>
+                    <li>Node.js & Express (Backend)</li>
+                    <li>Socket.io (Real-time communication)</li>
+                    <li>CSS for styling</li>
+                    <li>Heroku & Render for deployment</li>
+                </ul>
+            </div>
+        </section>
+        <section id="project-gallery">
+            <h2>Project Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="/images/chat-thumb.png" alt="Splash Screen" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/chatpc.png" alt="Chat mobile" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/chatmob.png" alt="Chat pc" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/chatusername.png" alt="Chat user" class="gallery-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges-solutions">
+            <h2>Challenges and Solutions</h2>
+            <p>One significant challenge was ensuring smooth real-time communication between the frontend and backend, especially handling user connections and disconnections. This was solved by leveraging Socket.io's event-driven architecture to update the online users' list and broadcast system messages efficiently.</p>
+        </section>
+
+        <section id="future-improvements">
+            <h2>Future Improvements</h2>
+            <ul>
+                <li>Add user authentication to secure chat sessions</li>
+                <li>Implement private messaging between users</li>
+                <li>Enhance UI for mobile responsiveness</li>
+                <li>Include message encryption for secure communication</li>
+            </ul>
+        </section>
+
+        <section id="project-reflection">
+            <h2>Reflection</h2>
+            <p>This project helped me understand the power of real-time web applications and how to manage state effectively between users in different locations. I learned how to integrate frontend and backend seamlessly using Socket.io and the importance of deploying a stable, secure chat application.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ac-webdev. All rights reserved.</p>
+    </footer>
+    
+    <script src="/script.js"></script>
+
+   
+
+</body>
+</html>

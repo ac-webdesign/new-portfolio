@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Ch - Full Stack Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo-link"><img class="logo" src="/images/logo2.png" alt="Alexander Logo"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="home-content">
+            <div class="text-content">
+                <div class="name">Alexandros Chorevas</div>
+                <div class="title">Full Stack Web Developer</div>
+
+                <div class="social-links">
+                    <a href="https://github.com/ac-webdesign" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alexchorevas/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/delavengas/" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/alek0s13/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="bio">
+                    My name is Alexander, and I am a Full Stack Developer! My main goal is creating user-friendly, 
+                    modern, and minimalistic websites and applications. With a bachelor's degree in telecommunications 
+                    science and technology, I've developed a well-rounded skillset of technical knowledge. 
+                </p>
+            
+            </div>
+            <div class="button-content">
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                
+                    <div class="github-link">
+                        <a href="https://github.com/ac-webdesign" class="btn btn-github">
+                            <i class="fab fa-github"></i>
+                              Check out my GitHub
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <section id="home" class="home-section">
+            
+            
+            <div class="latest-projects">
+                <h2>My Latest Projects</h2>
+                <ul class="project-list">
+                    <li>
+                        <a href="/projects/chat-application.html" class="project-link">
+                            <img src="/images/chat-thumb.png" alt="chat thumbnail" class="project-thumbnail">
+                            <div class="project-info">
+                                <span class="project-name">Real Time Chat Application</span>
+                                <span class="project-description">This is a real time chat application built with React, Node.js, and Socket.io.</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/projects/auth-project.html" class="project-link">
+                            <img src="/images/auth2-thumb.png" alt="authentication thumbnail" class="project-thumbnail">
+                            <div class="project-info">
+                                <span class="project-name">Authentication App</span>
+                                <span class="project-description">This is a simple authentication app built with Node.js, EJS for frontend, and Express session for authentication.</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/projects/tasktree.html" class="project-link">
+                            <img src="/images/tasktree-thumb.png" alt="TaskTree Thumbnail" class="project-thumbnail">
+                            <div class="project-info">
+                                <span class="project-name">TaskTree</span>
+                                <span class="project-description">TaskTree is a project management app built with React, Node.js, and Express.</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+                <a href="/projects.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <div class="skill-content">
+                                <span>HTML5</span>
+                                <p>Semantic markup and accessibility</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <div class="skill-content">
+                                <span>CSS3</span>
+                                <p>Responsive design and animations</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <div class="skill-content">
+                                <span>JavaScript</span>
+                                <p>ES6+, DOM manipulation, and AJAX</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <div class="skill-content">
+                                <span>React</span>
+                                <p>Component-based UI development</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <div class="skill-content">
+                                <span>Bootstrap</span>
+                                <p>Responsive framework for rapid development</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <div class="skill-content">
+                                <span>Node.js</span>
+                                <p>Server-side JavaScript runtime</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <div class="skill-content">
+                                <span>Express</span>
+                                <p>Web application framework for Node.js</p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <div class="skill-content">
+                                <span>RESTful APIs</span>
+                                <p>Design and implementation of REST APIs</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lock"></i>
+                            <div class="skill-content">
+                                <span>Authentication</span>
+                                <p>Secure user authentication and authorization</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <div class="skill-content">
+                                <span>Figma</span>
+                                <p>UI/UX design and prototyping</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <div class="skill-content">
+                                <span>MongoDB</span>
+                                <p>NoSQL database for modern applications</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <div class="skill-content">
+                                <span>GitHub</span>
+                                <p>Version control and collaboration</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paper-plane"></i>
+                            <div class="skill-content">
+                                <span>Postman</span>
+                                <p>API development and testing</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="all-projects-container">
+                <div class="project-category">
+                    <h3 class="category-header">
+                        Frontend Projects
+                        <span class="toggle-icon">+</span>
+                    </h3>
+                    <ul class="all-project-list">
+                        <li class="all-project-item">
+                            <a href="/projects/chat-application.html" class="all-project-link">
+                                <img src="/images/chat-thumb.png" alt="chat thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">Real Time Chat Application</span>
+                                    <span class="project-description">React, Node.js, Socket.io</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="all-project-item">
+                            <a href="https://ac-webdesign.github.io/" class="all-project-link">
+                                <img src="/images/portfolio-alex.png" alt="Portfolio thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">Portfolio Website</span>
+                                    <span class="project-description">HTML, CSS, JavaScript</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="all-project-item">
+                            <a href="https://free-bitcoin-hunter.netlify.app/" class="all-project-link">
+                                <img src="/images/bitcoin-hunter.png" alt="E-commerce thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">Bitcoin Hunter Website</span>
+                                    <span class="project-description">HTML, CSS, JavaScript</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="all-project-item">
+                            <a href="/projects/calcmycrypto.html" class="all-project-link">
+                                <img src="/images/calcmycrypto-thumb.png" alt="Dashboard thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">CalcMyCrypto Application</span>
+                                    <span class="project-description">React, HTML, CSS, JavaScript, CoinGecko API</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="project-category">
+                    <h3 class="category-header">
+                        Backend Projects
+                        <span class="toggle-icon">+</span>
+                    </h3>
+                    <ul class="all-project-list">
+                        <li class="all-project-item">
+                            <a href="/projects/auth-project.html" class="all-project-link">
+                                <img src="/images/auth2-thumb.png" alt="authentication thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">Authentication App</span>
+                                    <span class="project-description">Node.js, EJS, Express session</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="all-project-item">
+                            <a href="/projects/chat-application.html" class="all-project-link">
+                                <img src="/images/chat-thumb.png" alt="chat thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">Real Time Chat Application</span>
+                                    <span class="project-description">React, Node.js, Socket.io</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="all-project-item">
+                            <a href="/projects/blogger.html" class="all-project-link">
+                                <img src="/images/blogger-blog.png" alt="Blogger thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">Blogger Application</span>
+                                    <span class="project-description">Node.js, Express, MongoDB</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-category">
+                    <h3 class="category-header">
+                        JavaScript Projects
+                        <span class="toggle-icon">+</span>
+                    </h3>
+                    <ul class="all-project-list">
+                        
+                        <li class="all-project-item">
+                            <a href="/projects/javascript-projects/memory-game.html" class="all-project-link">
+                                <img src="/images/memorygame.png" alt="task manager thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">Memory Game</span>
+                                    <span class="project-description">JavaScript, HTML, CSS</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="all-project-item">
+                            <a href="/projects/javascript-projects/quiz-game.html" class="all-project-link">
+                                <img src="/images/quiz-game.png" alt="quiz game thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">Quiz Game</span>
+                                    <span class="project-description">JavaScript, HTML, CSS, JSON</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="all-project-item">
+                            <a href="/projects/javascript-projects/password-generator.html" class="all-project-link">
+                                <img src="/images/password-generator.png" alt="password generator thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">Password Generator</span>
+                                    <span class="project-description">JavaScript, HTML, CSS</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- <li class="all-project-item">
+                            <a href="/projects/weather-app.html" class="all-project-link">
+                                <img src="/images/weather-app-thumb.png" alt="weather app thumbnail" class="all-project-thumbnail">
+                                <div class="project-info">
+                                    <span class="project-name">Weather App</span>
+                                    <span class="project-description">JavaScript, API integration</span>
+                                </div>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> Phone: +30 699 20 44 914</li>
+                        <li><i class="fab fa-whatsapp"></i> WhatsApp: +30 699 20 44 914</li>
+                        <li><i class="fab fa-telegram"></i> Telegram: @acwebdev</li>
+                        <li><i class="fas fa-envelope"></i> Email: ac.masterdesign@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/meojwlbj" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <input type="hidden" name="_cc" value="alex.chorevas@gmail.com">
+                        <input type="hidden" name="_subject" value="New submission!">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ac-webdev. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

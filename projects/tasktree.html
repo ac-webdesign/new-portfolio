@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskTree Mobile Application</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-content{
+            padding: 1rem;
+        }
+        li{
+            list-style-type: none;
+            margin-bottom: 0.4em;
+        }
+        .gallery-item{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gallery-item img{
+            width: 150px;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="/images/logo2.png" alt="Alexander Logo"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="project-overview">
+            <h2>TaskTree Mobile Application</h2>
+            <div class="project-content">
+                <div class="project-description">
+                    <p>The TaskTree is a full-stack web and mobile application that allows users to create, manage, and organize tasks, projects, and notes. 
+                        Users can categorize their tasks with subcategories, ensuring streamlined organization. Each user has a 
+                        personalized dashboard that displays their tasks, and the app securely manages user authentication with JWT-based login functionality.</p>
+                </div>
+                <div class="project-image">
+                    <img src="/images/tasktree-project-full.png" alt="TaskTree Overview">
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/ac-webdesign/AI-task-manager-app" class="btn btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+                <a href="https://tasktree.netlify.app/" class="btn btn-demo">Live Demo</a>
+            </div>
+            <p class="demo-note"><b>Note:</b> The server may take a few moments to start up when accessing the live demo. Please be patient if there's a slight delay.</p>
+        </section>
+
+        <section id="project-details">
+            <h2>Key Features</h2>
+            <div class="project-features">
+                <ul>
+                    <li><b>User Registration and Authentication:</b> Secure login and registration with encrypted passwords and JWT token-based authentication.</li>
+                    <li><b>Task, Project, and Note Management:</b> Users can create, update, and delete tasks, projects, and notes with subcategories.</li>
+                    <li><b>User-Specific Data:</b> Only the tasks created by a logged-in user are visible to that user.</li>
+                    <li><b>Subcategory Management:</b> Each task or project can have multiple subcategories for more granular organization.</li>
+                    <li><b>Real-Time User Authentication:</b> Token-based authentication to secure routes and user-specific data.</li>
+                    <li><b>Search Functionality:</b> Users can search for tasks, projects, and notes by name.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="technologies-used">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <ul>
+                    <li><b>Frontend:</b> React.js, CSS for UI/UX, Netlify (for deployment)</li>
+                    <li><b>Backend:</b> Node.js, Express.js, Render (for deployment)</li>
+                    <li><b>Database:</b> MongoDB with Mongoose for database modeling</li>
+                    <li><b>Authentication:</b> JWT (JSON Web Tokens) for user sessions</li>
+                    <li><b>Libraries:</b> Axios for HTTP requests, bcrypt for password hashing, jwt-decode for token decoding</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="project-gallery">
+            <h2>Project Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="/images/tasktree-splash.png" alt="Splash Screen" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/tasktree-signup.png" alt="Registration Page" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/tasktree-tasks.png" alt="Notes Management" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/tasktree-home.png" alt="Homepage" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/tasktree-login.png" alt="Login Page" class="gallery-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="future-improvements">
+            <h2>Future Improvements</h2>
+            <ul>
+                <li>Push Notifications: Implement real-time notifications for task deadlines and updates.</li>
+                <li>AI Integration: Add an AI assistant feature to suggest task prioritization or offer reminders.</li>
+                <li>Progress Tracking: Add task progress-tracking features, like completion percentages and time management tools.</li>
+            </ul>
+        </section>
+
+        <section id="project-reflection">
+            <h2>Reflection</h2>
+            <p>This project allowed me to develop a comprehensive full-stack application that focuses on user management, authentication, and dynamic data management. It was rewarding to see the smooth integration of both frontend and backend, with real-time user data reflecting in the UI.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ac-webdev. All rights reserved.</p>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

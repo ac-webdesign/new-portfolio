@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Skills</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #ecf0f1;
+    --accent-color: #3498db;
+    --text-color: #333;
+}
+        /* Full Stack Skills Section Styles */
+        .skills-section {
+            padding: 4rem 0;
+            background-color: #f8f9fa;
+        }
+
+        .skills-section h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .frontend-skills,
+        .backend-skills {
+            flex-basis: 45%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .frontend-skills h3,
+        .backend-skills h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skills-list li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .skills-list i {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .skills-list span {
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            .frontend-skills,
+            .backend-skills {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section id="full-stack-skills" class="skills-section">
+    <h2>Full Stack Skills</h2>
+    <div class="skills-container">
+        <div class="frontend-skills">
+            <h3>Frontend</h3>
+            <ul class="skills-list">
+                <li>
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </li>
+                <li>
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </li>
+                <li>
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </li>
+                <li>
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </li>
+                <li>
+                    <i class="fab fa-sass"></i>
+                    <span>Sass</span>
+                </li>
+                <li>
+                    <i class="fab fa-bootstrap"></i>
+                    <span>Bootstrap</span>
+                </li>
+            </ul>
+        </div>
+        <div class="backend-skills">
+            <h3>Backend</h3>
+            <ul class="skills-list">
+                <li>
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </li>
+                <li>
+                    <i class="fas fa-server"></i>
+                    <span>Express.js</span>
+                </li>
+                <li>
+                    <i class="fas fa-database"></i>
+                    <span>MongoDB</span>
+                </li>
+                <li>
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>RESTful APIs</span>
+                </li>
+                <li>
+                    <i class="fas fa-lock"></i>
+                    <span>Authentication</span>
+                </li>
+                <li>
+                    <i class="fas fa-code-branch"></i>
+                    <span>Version Control (Git)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>

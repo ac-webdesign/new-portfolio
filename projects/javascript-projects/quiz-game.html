@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-demo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .project-content{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 50%;
+        }
+        @media screen and (max-width: 968px) {
+            .project-demo{
+                flex-direction: column;
+            }
+            .project-content{
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html"><img class="logo" src="/images/logo2.png" alt="Alexander Logo"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../index.html#skills">Skills</a></li>
+                <li><a href="../../index.html#projects">Projects</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+    
+
+        <section id="project-demo">
+            <h2>Project Demo</h2>
+            <div class="project-demo">
+
+                <div class="project-content">
+                    <div class="project-description">
+                        <p>This is a quiz game inspired by the popular game show "Who Wants to Be a Millionaire?".
+                            The game consists of 15 questions of increasing difficulty, and players need to answer all of them correctly to win.
+                            The game interface includes dynamic prize tracking, visually highlighting the current question's prize.
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ac-webdesign/Javascript-Projects" class="btn btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+                        <a href="https://ac-webdesign.github.io/quiz-game.html" class="btn btn-demo">Live Demo</a>
+                    </div>
+                </div>
+                <img src="/images/millionaire.png" alt="Quiz Game Demo" class="responsive-image">
+
+            </div>
+        </section>
+
+        <section id="project-details">
+            <h2>Key Features</h2>
+            <div class="project-features">
+                <ul>
+                    <li>Dynamic Question Display: Questions and options are loaded dynamically from a JSON file</li>
+                    <li>Interactive Answer Checking: Players receive instant feedback on their answers.</li>
+                    <li>Prize Board: A vertical prize board displays the potential winnings for each question, highlighting the active prize level as the player progresses.</li>
+                    <li>Restart Option: If the player loses, a "Start" button appears to restart the game from the beginning.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="technologies-used">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <ul>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>JSON: Stores the questions, options, and correct answers, which are loaded dynamically during gameplay.</li>
+                </ul>
+            </div>
+        </section>
+
+        
+
+        <section id="project-reflection">
+            <h2>Reflection</h2>
+            <p>This project provided a great opportunity to work with dynamic data loading through JSON and handling user interaction in a quiz format. Overall, this project was a fun way to blend front-end skills with interactive game mechanics.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ac-webdev. All rights reserved.</p>
+    </footer>
+    
+    <script src="/script.js"></script>
+
+    <script>
+        const cards = ['🍎', '🍌', '🍒', '🍓', '🍇', '🥥', '🍋', '🥝'];
+
+        let shuffledCards = [...cards, ...cards].sort(() => Math.random() - 0.5);
+
+        let openedCards = [];
+        let matchedCards = [];
+        const cardsGrid = document.querySelector('.cards-grid');
+        const restartButton = document.getElementById('restart-btn');
+
+        function initializeGame() {
+            shuffledCards.forEach((card, index) => {
+                const cardElement = document.createElement('div');
+                cardElement.classList.add('card');
+                cardElement.dataset.index = index;
+                cardElement.innerHTML = '<span class="hidden"></span>';
+                cardElement.addEventListener('click', handleCardClick);
+                cardsGrid.appendChild(cardElement);
+            });
+        }
+
+        function handleCardClick() {
+            const clickedCard = this;
+            const clickedIndex = clickedCard.dataset.index;
+
+            if (openedCards.length < 2 && !openedCards.includes(clickedIndex) && !matchedCards.includes(clickedIndex)) {
+                openedCards.push(clickedIndex);
+                clickedCard.classList.add('flip'); // Add the flip class
+
+                setTimeout(() => {
+                    clickedCard.innerHTML = `<span>${shuffledCards[clickedIndex]}</span>`;
+                }, 250);
+                if (openedCards.length === 2) {
+                    const [firstIndex, secondIndex] = openedCards;
+                    const firstCard = document.querySelector(`[data-index="${firstIndex}"]`);
+                    const secondCard = document.querySelector(`[data-index="${secondIndex}"]`);
+
+                    
+                    
+                    setTimeout(() => {
+                        if (shuffledCards[firstIndex] !== shuffledCards[secondIndex]) {
+                            firstCard.innerHTML = '<span class="hidden"></span>';
+                            firstCard.classList.remove('flip');
+                            secondCard.classList.remove('flip');
+
+                            secondCard.innerHTML = '<span class="hidden"></span>';
+                        }
+                        
+                        
+                        openedCards = [];
+                        checkGameEnd();
+                    }, 1000);
+                    if (shuffledCards[firstIndex] === shuffledCards[secondIndex]) {
+                        firstCard.classList.remove('flip');
+                        secondCard.classList.remove('flip');
+                        firstCard.classList.add('matched');
+                        secondCard.classList.add('matched');
+                        matchedCards.push(firstIndex, secondIndex);
+                    }
+                }
+            }
+        }
+
+        function checkGameEnd() {
+            if (matchedCards.length === shuffledCards.length) {
+                alert('Congratulations! You won the game!');
+            }
+        }
+
+        function restartGame() {
+            openedCards = [];
+            matchedCards = [];
+            cardsGrid.innerHTML = '';
+            shuffledCards = [...cards, ...cards].sort(() => Math.random() - 0.5);
+            initializeGame();
+        }
+
+        restartButton.addEventListener('click', restartGame);
+
+        initializeGame();
+
+    </script>
+</html>
+
