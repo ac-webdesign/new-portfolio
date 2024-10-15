@@ -3,12 +3,11 @@
 :root {
     /* --primary-color: #0d5caa; */
     /* --secondary-color: #ecf0f1;
-    --accent-color: #3498db;
-    --text-color: #696969; */
+    --accent-color: #3498db; */
     --primary-color: #0c1424; /* Dark Blue */
     --secondary-color: #f0f4f8; /* Light Gray */
     --accent-color:#0d5caa; /* Coral */
-    --text-color: #192880; /* Dark Gray */
+    --text-color: #afafaf;
 }
 
 body {
@@ -145,7 +144,7 @@ nav ul li a:hover {
         content: '';
         position: absolute;
     }
-
+    
     .nav-toggle-label span::before {
         bottom: 10px;
     }
@@ -188,6 +187,9 @@ nav ul li a:hover {
         transform: rotate(-45deg);
         top: 0;
     }
+    h2{
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -213,7 +215,8 @@ nav ul li a:hover {
     margin-top: 2rem;
 }
 .btn {
-    color: #1877F2;
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
     display: inline-flex;
     align-items: center;
     padding: 0.75rem 1.5rem;
@@ -222,7 +225,7 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 50px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(43, 100, 204, 0.1);
 }
 .btn:hover{
     transform: translateY(-3px);
@@ -230,7 +233,7 @@ nav ul li a:hover {
 }
 .btn-github {
     margin-right: 1rem;
-    background-color: var(--primary-color);
+    background-color:black;
     color: #ffffff;
     padding: 0.75rem 1.5rem;
     min-width: 150px;
@@ -286,7 +289,7 @@ nav ul li a:hover {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: #f8f9fa;
+    background-color: var(--primary-color);
     border-radius: 8px;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -304,13 +307,10 @@ nav ul li a:hover {
 }
 
 .home-content .name {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    color: var(--secondary-color);
 }
 
-.home-content .title {
-    font-size: 1.5rem;
-    color: var(--accent-color);
-}
 .home-content .bio {
     color: var(--text-color);
     line-height: 1.5;
