@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application Project - Alexander Ch</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../projects.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="/images/logo2.png" alt="Alexander Logo"></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="project-overview">
+            <h2>Chatbot Application</h2>
+            <div class="project-content">
+                <div class="project-description">
+                    <p>This project is a chatbot application built with Node.js for the backend and EJS for rendering the frontend. The chatbot uses a JSON file to store predefined messages and returns responses based on user input. It showcases how server-side logic can handle user interactions, dynamically rendering responses in the browser.</p>
+                </div>
+                <div class="project-image">
+                    <img src="/images/chatbotimg.png" alt="Chatbot Application Overview">
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/ac-webdesign/chatBot-app" class="btn btn-github"><i class="fab fa-github"></i> View on GitHub</a>
+                <a href="https://chatbot-application-xo21.onrender.com/" class="btn btn-demo">Live Demo</a>
+            </div>
+            <p class="demo-note"><b>Note:</b> The chatbot is hosted on free-tier services, so there may be a brief delay when loading the demo. Please be patient while it starts up.</p>
+        </section>
+    
+        <section id="project-details">
+            <h2>Key Features</h2>
+            <div class="project-features">
+                <ul>
+                    <li>Backend built with Node.js</li>
+                    <li>Dynamic frontend rendered using EJS templates</li>
+                    <li>Predefined chatbot responses stored in a JSON file</li>
+                    <li>Message matching logic with fallback responses for unrecognized inputs</li>
+                    <li>Smooth integration of frontend and backend logic</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section id="technologies-used">
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <ul>
+                    <li>Node.js (Backend)</li>
+                    <li>EJS (Templating Engine for Frontend)</li>
+                    <li>JavaScript (Frontend Logic)</li>
+                    <li>Express (Web Framework)</li>
+                    <li>JSON (Chatbot Message Data)</li>
+                    <li>CSS for styling</li>
+                    <li>Deployed on Netlify/Heroku</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section id="project-gallery">
+            <h2>Project Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="/images/chatbot2.png" alt="Chatbot Overview" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/chatbot.png" alt="Chatbot on Mobile" class="gallery-image">
+                </div>
+        
+            </div>
+        </section>
+    
+        <section id="challenges-solutions">
+            <h2>Challenges and Solutions</h2>
+            <p>A key challenge was integrating the EJS templates with dynamic responses from the backend, ensuring smooth real-time interaction between user input and the predefined chatbot messages. This was solved by using Express and EJS together for efficient server-side rendering and dynamic response generation.</p>
+        </section>
+    
+        <section id="future-improvements">
+            <h2>Future Improvements</h2>
+            <ul>
+                <li>Add natural language processing for more intelligent responses</li>
+                <li>Expand the dataset for a broader range of responses</li>
+                <li>Implement user authentication for personalized interactions</li>
+                <li>Improve the UI for better mobile responsiveness</li>
+            </ul>
+        </section>
+    
+        <section id="project-reflection">
+            <h2>Reflection</h2>
+            <p>Working on this project deepened my understanding of server-side rendering with Node.js and EJS, and how to handle user input dynamically with JSON data. It was a great exercise in backend development, and I look forward to further improving the chatbot’s intelligence and responsiveness.</p>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2024 ac-webdev. All rights reserved.</p>
+    </footer>
+    
+    <script src="/script.js"></script>
+
+   
+
+</body>
+</html>
