@@ -31,3 +31,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// SWITCH TRANSLATOR
+
+document.getElementById('translate-switch').addEventListener('change', function () {
+    const frame = document.querySelector('iframe.goog-te-banner-frame');
+    if (frame) frame.style.display = 'none'; // Hide Google Translate banner
+
+    const isGreek = this.checked; // Check if toggle is ON
+    const language = isGreek ? 'el' : 'en';
+    const translateElement = document.querySelector('#google_translate_element select');
+
+    if (translateElement) {
+        // Force refresh by switching to a dummy language first
+        translateElement.value = 'af'; // Set to Afrikaans or another arbitrary language
+        translateElement.dispatchEvent(new Event('change'));
+    
+        // Apply the desired language after a short delay
+        setTimeout(() => {
+            translateElement.value = language;
+            translateElement.dispatchEvent(new Event('change'));
+        }, 50); // Delay allows the widget to register the dummy language
+    }
+    
+});

@@ -12,16 +12,20 @@
     <header>
         <nav>
             <a href="../index.html" class="logo-link"><img class="logo" src="/images/logo2.png" alt="Alexander Logo"></a>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
+
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div id="google_translate_element" style="display:none;"></div>
+
+            <label class="switch">
+                <input type="checkbox" id="translate-switch">
+                <span class="slider"></span>
+            </label>
         </nav>
     </header>
 
@@ -66,7 +70,7 @@
                 <ul class="project-list">
                     <li>
                         <a href="/projects/chatbot.html" class="project-link">
-                            <img src="/images/chatbotimg.png" alt="chatbot thumbnail" class="project-thumbnail">
+                            <img src="/images/chatbot111.webp" alt="chatbot thumbnail" class="project-thumbnail">
                             <div class="project-info">
                                 <span class="project-name">Chatbot Application</span>
                                 <span class="project-description">A simple Chatbot Application built with Node.js, EJS for the frontend.</span>
@@ -84,7 +88,7 @@
                     </li>
                     <li>
                         <a href="/projects/chat-application.html" class="project-link">
-                            <img src="/images/chat-application-thumb.png" alt="chat thumbnail" class="project-thumbnail">
+                            <img src="/images/chatapp111.webp" alt="chat thumbnail" class="project-thumbnail">
                             <div class="project-info">
                                 <span class="project-name">Real Time Chat Application</span>
                                 <span class="project-description">This is a real time chat application built with React, Node.js, and Socket.io.</span>
@@ -103,7 +107,7 @@
                     
                     <li>
                         <a href="/projects/tasktree.html" class="project-link">
-                            <img src="/images/tasktree-application-thumb.png" alt="TaskTree Thumbnail" class="project-thumbnail">
+                            <img src="/images/tasktree111.webp" alt="TaskTree Thumbnail" class="project-thumbnail">
                             <div class="project-info">
                                 <span class="project-name">TaskTree</span>
                                 <span class="project-description">TaskTree is a project management app built with React, Node.js, and Express.</span>
@@ -444,7 +448,7 @@
                     </ul>
                 </div>
                 <div class="contact-form">
-                    <form action="https://formspree.io/f/meojwlbj" method="POST">
+                    <form action="" method="POST">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
@@ -465,8 +469,15 @@
 
     <footer>
         <p>&copy; 2024 ac-webdev. All rights reserved.</p>
-    </footer>
-
+    </footer>    
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     <script src="script.js"></script>
+      
 </body>
 </html>
