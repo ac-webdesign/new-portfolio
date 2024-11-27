@@ -7,11 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo-link"><img class="logo" src="/images/logo2.png" alt="Alexander Logo"></a>
+            <a href="../index.html" class="logo-link"><img class="logo" src="/images/aclogo.png" alt="Alexander Logo"></a>
 
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -30,10 +33,10 @@
     </header>
 
     <main>
-        <div class="home-content">
+        <div class="home-content" id="home-content">
             <div class="text-content">
                 <div class="name">Alexandros Ch.</div>
-                <div class="title">Full Stack Web Developer</div>
+                <div class="title">Full Stack Developer</div>
 
                 <div class="social-links">
                     <a href="https://github.com/ac-webdesign" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -41,11 +44,11 @@
                     <a href="https://www.facebook.com/delavengas/" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/alek0s13/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
-                <p class="bio">
+                <!-- <p class="bio">
                     My name is Alexander, and I am a Full Stack Developer! My main goal is creating user-friendly, 
                     modern, and minimalistic websites and applications. With a bachelor's degree in telecommunications 
                     science and technology, I've developed a well-rounded skillset of technical knowledge. 
-                </p>
+                </p> -->
             
             </div>
             <div class="button-content">
@@ -62,9 +65,8 @@
                     </div>
             </div>
         </div>
-        <section id="home" class="home-section">
-            
-            
+
+        <section id="home" class="home-section">            
             <div class="latest-projects">
                 <h2>My Latest Projects</h2>
                 <ul class="project-list">
@@ -476,8 +478,50 @@
         }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
+
     <script src="script.js"></script>
-      
+   
+    <script src="three.r134.min.js"></script>
+
+    <script src="vanta.fog.min.js"></script>
+    <script src="vanta.dots.min.js"></script>
+    <script src="vanta.birds.min.js"></script>
+    
+    <script>
+        VANTA.FOG({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xffffff,
+            midtoneColor: 0x123f72,
+            lowlightColor: 0xc3c3c3,
+            baseColor: 0xebfbff
+        });
+    </script>
+
+
+    <script>
+        VANTA.BIRDS({
+        el: "#home-content",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x0c1424,
+        birdSize: 0.60,
+        wingSpan: 21.00,
+        separation: 33.00,
+        alignment: 32.00,
+        quantity: 3.00
+        })
+    </script>
+    <script src="vanta.dots.min.js"></script>
+    
 </body>
 </html>

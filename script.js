@@ -43,8 +43,7 @@ document.getElementById('translate-switch').addEventListener('change', function 
     const translateElement = document.querySelector('#google_translate_element select');
 
     if (translateElement) {
-        // Force refresh by switching to a dummy language first
-        translateElement.value = 'af'; // Set to Afrikaans or another arbitrary language
+        translateElement.value = 'af'; 
         translateElement.dispatchEvent(new Event('change'));
     
         // Apply the desired language after a short delay
@@ -55,3 +54,7 @@ document.getElementById('translate-switch').addEventListener('change', function 
     }
     
 });
+
+// VANTA
+
+            
